@@ -1,0 +1,157 @@
+.show-images-modal-mega-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(117, 116, 116, 0.144);
+  /* backdrop-filter: blur(1px); */
+  /* z-index: 200; */
+  /* position: fixed; */
+  /* top: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* left: 0; */
+}
+
+.show-images-heading {
+  padding-left: 1rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: #65a143;
+}
+
+.show-images-modal-container {
+  width: 25rem;
+  height: 35rem;
+  background-color: #f1f1f1;
+  padding: 3rem 1rem;
+  padding-top: 2rem;
+  position: relative;
+  /* border-radius: 10px; */
+}
+
+.show-images-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.carousel-style {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  padding-top: 0;
+}
+
+.image-container {
+  /* height: 16rem; */
+  max-height: 17rem;
+  width: 100%;
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  padding: 5px;
+}
+
+.carousel-container img {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-container h4 {
+  color: #65a143;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.defect-name-container {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input:focus {
+  border: none;
+}
+
+.defect-name-container p {
+  font-size: 13px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+}
+
+.description-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.description-container p {
+  font-size: 13px;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  height: fit-content;
+  min-height: 50px;
+  padding: 2px 5px;
+}
+
+.react-multiple-carousel__arrow {
+  font-size: 20px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+.react-multiple-carousel__arrow::before {
+  font-size: 13px;
+}
+
+.react-multiple-carousel__arrow--left {
+  background: #4a792e;
+  width: 20px;
+  color: #4a792e;
+  font-size: 12px;
+}
+
+.react-multiple-carousel__arrow--right {
+  background: #4a792e;
+  width: 20px;
+  color: #4a792e;
+  font-size: 12px;
+}
+
+.react-multiple-carousel__arrow--left:hover {
+  background: #4a792e;
+}
+
+.react-multiple-carousel__arrow--right:hover {
+  background: #4a792e;
+}
+
+.react-multi-carousel-dot button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: rgb(29, 91, 36);
+}

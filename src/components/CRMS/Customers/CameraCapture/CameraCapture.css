@@ -1,0 +1,83 @@
+.camera-capture-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 30;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.camera-box-container {
+  position: relative;
+  top:0;
+  left:0;
+  height: 85%;
+  width: 95%;
+  /* top: 0rem; */
+}
+
+.camera-button{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.19);
+    border: 2px solid white;
+    border-radius: 50%;
+    height:40px;
+    width: 40px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:10px;
+    left:50%;
+    z-index: 100;
+    transform: translateX(-50%);
+}
+
+.camera-button:hover{
+    border:2px solid black;
+}
+
+.clicked-image-container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.clicked-image{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
+
+.clicked-image-button-container{
+    position: absolute;
+    width:100%;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.clicked-image-button-container .clicked-button{
+    background: rgba(0, 0, 0, 0.19);
+    border: 2px solid white;
+    border-radius: 50%;
+    height:40px;
+    width: 40px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom:10px;
+    /* left:50%; */
+    z-index: 100;
+    margin:10px 0;
+    color:white;
+    font-size:20px;
+    /* transform: translateX(-50%); */
+}

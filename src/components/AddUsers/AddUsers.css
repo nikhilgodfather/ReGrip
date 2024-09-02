@@ -1,0 +1,46 @@
+.add-user-container {
+  width: 600px;
+  /* height: 530px; */
+}
+
+.add-user-container .addUser-header {
+  padding: 10px 30px;
+}
+
+.all-fields {
+  margin-top: 22px;
+  padding: 0px 30px;
+}
+.align-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.add-field-data {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+  width: 250px;
+  /* border: 1px solid red; */
+}
+
+.add-field-data input {
+  border: 1px solid #b2b2b2;
+  outline: none;
+  padding: 7px;
+  border: 1px solid hsl(210, 8%, 75%);
+  border-radius: 0.5rem;
+}
+
+.add-employees-in-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9vw;
+  width: 180px;
+}

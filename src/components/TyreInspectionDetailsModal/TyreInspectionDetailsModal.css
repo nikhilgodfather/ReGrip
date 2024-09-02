@@ -1,0 +1,133 @@
+.inspection-details-modal {
+    position: fixed;
+    z-index: 40;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(41, 41, 41, 0.286);
+    backdrop-filter: blur(1px);
+}
+
+.inspection-detail-Data {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #F1F1F1;
+    border-radius: 0.6rem;
+    width: 90%;
+    height: 95%;
+    display: flex;
+    padding: 90px 25px 0px 25px;
+}
+
+.tyre-inspection-detail-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0.6rem;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.modal-head-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+
+.head-name{
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-name > h1{
+    margin-bottom: 0;
+}
+
+.head-name > .serial_number-search{
+    width: 20rem;
+    height: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    color: grey;
+    font-size: 0.9vw;
+}
+
+.spp-dwn-btn{
+    padding: 7px;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+
+.tyre-inspection-detail-container::-webkit-scrollbar {
+    width: 19px;
+    height: 1rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.tyre-inspection-detail-container::-webkit-scrollbar-track {
+    border-bottom-right-radius: 0.6rem;
+}
+
+.tyre-inspection-detail-container::-webkit-scrollbar-track-piece:start {
+    margin-top: 30px;
+}
+
+.tyre-inspection-detail-container::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 30px;
+}
+
+.tyre-inspection-detail-container::-webkit-scrollbar-thumb {
+    background-color: #588048;
+    border-radius: 20px;
+    border: 7px solid transparent;
+    background-clip: content-box;
+}
+
+#tyre-serial-number-button {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border: none;
+    color: #938fe4;
+    background-color: #dfdbfa;
+    border-radius: 6px;
+}
+
+#tyre-Serial-Number-Button:hover {
+    background-color: #938fe4;
+    color: #dfdbfa;
+}
+
+.inspection-action-btn{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+}
+
+.close-btn-modal .close-cross
+{
+    background: none;
+    border: none;
+    font-size: 21px;
+    cursor: pointer;
+}

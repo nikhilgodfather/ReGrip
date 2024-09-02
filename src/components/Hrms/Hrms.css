@@ -1,0 +1,37 @@
+.hrmsContainer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Employee-list-card {
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+  align-items: center;
+  margin: 15px;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  padding: 40px 30px;
+  /* color: white; */
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  /* background-color: rgb(111, 195, 161); */
+}
+
+.Employee-list-card button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 25px;
+  border: none;
+  background: none;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}

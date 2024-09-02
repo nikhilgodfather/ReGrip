@@ -1,0 +1,21 @@
+.upload-invoice-modal{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px 20px;
+}
+
+.upload-invoice-modal .submit-button{
+    margin: auto auto 0px auto;
+    background-color: #65a143;
+    padding: 8px 15px;
+    font-size: 0.95vw;
+    border-radius: 8px;
+    color: white;
+    width: 80px;
+    cursor: pointer;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    border: none;
+}

@@ -1,0 +1,120 @@
+.tyre-action-container {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    overflow: scroll;
+}
+
+.tyre-action-container .tyre-loader {
+    margin: auto 0px;
+}
+
+.tyre-action-container .head {
+    display: flex;
+}
+
+.tyre-action-container .heading {
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.tyre-action {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.tyre-action-container .info {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 15px;
+    align-items: center;
+}
+
+.tyre-action-container .info .info-box {
+    /* width: 300px; */
+    border: 0.5px solid rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tyre-action-container .info .count {
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tyre-action-container .info .info-box .text {
+    font-size: 0.85vw;
+    display: flex;
+    align-items: center;
+}
+
+.tyre-action-container .toggle {
+    /* height: 10px; */
+    margin-left: auto;
+}
+
+.tyre-action-container .toggle button {
+    padding: 0px 20px;
+}
+
+.tyre-action-container .status-chip-approved {
+    background-color: #65a143;
+    color: white;
+    width: 120px;
+    margin: 0px auto;
+    padding: 7px 15px;
+    border-radius: 15px;
+    align-items: center;
+    display: grid;
+    line-height: 15px;
+}
+
+.tyre-action-container .status-chip-pending {
+    background-color: #ff8c01;
+    color: white;
+    width: 120px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 7px 15px;
+    border-radius: 15px;
+    align-items: center;
+    display: grid;
+    line-height: 15px;
+}
+
+.tyre-action-container .table-container {
+    height: fit-content;
+}
+
+.tyre-action-container .table-container td {
+    padding: 15px;
+}
+
+.tyre-action-container .submit-button {
+    margin: auto auto 0px auto;
+    background-color: #65a143;
+    padding: 5px 15px;
+    font-size: 0.9vw;
+    border-radius: 8px;
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none;
+    /* height: 100%; */
+}
+
+.disabled-button{
+    background-color: grey !important;
+    font-size: 0.9vw !important;
+}

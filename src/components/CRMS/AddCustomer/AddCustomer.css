@@ -1,0 +1,395 @@
+.main-addcustomer table th {
+  text-align: center;
+}
+
+.main-addcustomer table td {
+  text-align: center;
+}
+
+.add-customer-field {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40px; */
+}
+
+.customerField {
+  width: 230px;
+  font-size: 0.93vw;
+}
+
+.add-customer-field-upload {
+  display: flex;
+  gap: 40px;
+  /* text-align: center; */
+}
+
+.customerField-upload {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.uploading-input-field {
+  text-align: center;
+  padding: 6px 10px;
+}
+
+.addcustomer-type-main {
+  border: 1px solid #dbdbdb;
+  background-color: #fbfcfe;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50px;
+}
+
+.addcustomer-type-field {
+  padding: 5px 0px;
+  border-radius: 50px;
+  width: 130px;
+  text-align: center;
+  transition: 0.1s ease-in all;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected {
+  background: #000;
+  color: white;
+}
+
+/* new css */
+.main-addcustomer {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 25px;
+}
+
+.add-customer-head {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+}
+
+.add-customer-field-main {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.92vw;
+}
+
+.add-customer-field-main-fields {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 30px;
+}
+
+.add-customer-field-main .add-customer-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.customer-branch-table {
+  /* margin: 0px 10px; */
+}
+
+.customer-branch-table .branch-heading {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6px;
+}
+
+.customer-branch-table .branch-heading h2 {
+  color: #6c6c6b;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.add-branchBtn {
+  padding: 0.4rem 1rem;
+  height: 2rem;
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 6px;
+  box-shadow: 2px 0px 4px rgba(20, 20, 20, 0.523);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9vw;
+  /* margin-left: auto; */
+}
+
+.customer-branch-table th:first-child {
+  border-left: 1px solid #b2b2b2;
+}
+
+.customer-branch-table th:last-child {
+  border-right: 1px solid #b2b2b2;
+}
+
+/* progresbar */
+.submit-customer-button {
+  padding: 0.5rem 1.5rem !important;
+  border: none !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  font-size: 0.9vw !important;
+  margin: 0px auto 10px auto !important;
+  width: 180px;
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 0 !important;
+  transform: translateX(-50%) !important;
+}
+
+.add-customer-field-container {
+  width: auto;
+}
+
+.customer-branch-table td {
+  text-align: center !important;
+}
+
+.customer-branch-table th {
+  text-align: center !important;
+}
+
+.main-addcustomer .edit-button {
+  width: auto !important;
+  margin-left: auto;
+  margin-right: 0px;
+  padding: 8px;
+}
+
+.main-addcustomer .edit-button-table-customer {
+  width: fit-content;
+  padding: 8px;
+  background-color: black;
+  margin: auto;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1380px) {
+  .customerField {
+    width: 220px;
+  }
+
+  .add-customer-field-main-fields {
+    gap: 30px;
+  }
+}
+
+/* hubs css */
+.hub-fields {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hub-fields .field-align {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.hub-fields .add-hubs-btn {
+  cursor: pointer;
+  font-size: 0.9vw;
+  width: fit-content;
+  font-weight: normal;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 10px;
+  background-color: rgb(161, 87, 188);
+  outline: none;
+  border: none;
+}
+
+.hub-fields .hub-field .remove-hubs-btn {
+  width: fit-content;
+  font-weight: normal;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.remove-hubs-btn .crossicon {
+  color: grey;
+  font-size: 22px;
+}
+
+.remove-hubs-btn {
+  cursor: pointer;
+  display: flex;
+  padding-bottom: 8px;
+  align-items: end;
+  border: none;
+  background: transparent;
+}
+
+.addothersfield-customer {
+}
+
+.field-others-customers {
+  font-size: 0.95vw;
+  font-weight: normal;
+  outline: none;
+  width: 180px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 6px 0px 0px 6px !important;
+  border-left: 1px solid #b2b2b2;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  border-right: none;
+}
+
+.others-buttons-customers {
+  height: 36px;
+  padding: 10px;
+  border-radius: 0px 6px 6px 0px;
+  border-left: none;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  border-right: 1px solid #b2b2b2;
+}
+
+.remove-others-btn {
+  outline: none;
+  border: none;
+  width: fit-content;
+  background-color: transparent;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+.remove-others-btn .crossicon {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.button-for-adding .addBranchBTN {
+  padding: 0.5rem 1.5rem !important;
+  border: none !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  font-size: 0.9vw !important;
+  margin: 0px auto 0px auto !important;
+  width: 180px;
+}
+
+.button-for-adding .addBranchBTN-disabled {
+  padding: 0.5rem 1.5rem !important;
+  border: none !important;
+  color: #000 !important;
+  background-color: #ebebe4 !important;
+  border-radius: 20px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  font-size: 0.9vw !important;
+  margin: 0px auto 0px auto !important;
+  width: 180px;
+}
+
+/* tabs */
+
+.tyre-category-section-tab {
+  border: 1px solid #b2b2b2;
+  width: 450px;
+}
+
+.tyre-category-section-tab .tabs-main {
+  width: 90px;
+  font-size: 0.98vw;
+}
+
+.tyre-category-section-tab .table-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+.tyre-category-section-tab .table-panel h5 {
+  font-weight: 600;
+  color: #000;
+  font-size: 0.95vw;
+}
+
+.tyre-category-section-tab .table-panel .brand-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tyre-category-section-tab .table-panel .brand-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tyre-category-section-tab .add-icons-add-customerfor-tabs {
+  width: 40px;
+  height: 40px;
+  margin:auto auto 0px auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.tyre-category-section-tab .add-icons-add-customerfor-tabs .add-tabs {
+  margin-top:1px;
+  padding: 8px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.tyre-category-section-tab .add-icons-add-customerfor-tabs .add-disabled {
+  margin-top:1px;
+  padding: 8px;
+  background-color: #EBEBE4;
+  color: #C6C6C6;
+  border-radius: 20px;
+  cursor: not-allowed;
+}
+
+
+
+.tyre-category-section-tab .tabsPanl-design {
+  padding: 10px 15px;
+}
+
+.add-button-brand {
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 80px;
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+  text-decoration: none;
+}

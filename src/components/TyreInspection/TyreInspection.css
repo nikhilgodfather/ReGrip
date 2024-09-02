@@ -1,0 +1,433 @@
+.tyre-inspection-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tyre-inspection-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99%;
+  /* height: 150px; */
+}
+
+.heading_and_filter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* gap: 1rem; */
+  /* margin-top: 4.3rem; */
+  position: relative;
+  margin-top: auto;
+
+
+}
+
+
+.company_box {
+  max-width: 10em;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-cmp-btn {
+  background-color: white;
+  font-size: 0.9vw !important;
+  height: 32px;
+  width: 140px;
+  color: #39532f !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.MenuItem{
+  font-size: 0.9vw !important;
+}
+
+.dropdown-cmp-btn span .cmp {
+  margin-right: 10px;
+}
+
+.arrow-cmp {
+  transition: transform ease-in-out 0.3s;
+  margin: 3px 0px 0px 0px;
+}
+
+.dropdown-cmp-content {
+  font-size: 0.9vw;
+  border: 1px solid #ccc;
+  list-style: none;
+  position: absolute;
+  width: 10rem;
+  transition: 0.3s;
+  z-index: 200;
+  top: 100%;
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 0.5rem;
+  border-radius: 0.5em;
+}
+
+input[type="checkbox"]:checked~.dropdown-cmp-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked+label>.arrow-cmp {
+  transform: rotate(180deg);
+}
+
+#dropdown-cmp {
+  opacity: 0;
+  position: absolute;
+}
+
+.dropdown-cmp-content li {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  display: block;
+  padding: 0.7em 0.5em;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-cmp-content li:hover {
+  background: #39532f;
+  color: #ffffff;
+  border-radius: 0.5em;
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.no-entries-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #39532f;
+  gap: 10px;
+  margin-top: 4rem;
+}
+
+.inspection-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 5px; */
+  position: relative;
+  gap: 1rem;
+}
+
+#search-field{
+  height: 32px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  color: grey;
+  font-size: 0.8vw;
+}
+
+.inspection-filters input[type="text"] {
+  height: 14px;
+  padding: 8px;
+  border-radius: 5px;
+  /* border: 1px solid #ccc; */
+  margin-right: 10px;
+  color: grey;
+  font-size: 0.8vw;
+}
+
+
+/* .inspection-filters input[type="date"] {
+  width: 150px;
+  font-size: 0.9vw;
+  font-family: "Segoe UI";
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+} */
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  /* bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0; */
+  position: absolute;
+  /* right: 0;
+  top: 0;
+  width: 100%; */
+  opacity: 0;
+  width: 100%;
+  -webkit-appearance: none
+}
+
+.add-tyre-button {
+  /* right: 10px;
+  top: 10px; */
+  background-color: #39532f;
+  padding: 2px 10px;
+  border: white;
+  color: white;
+  border-radius: 5px;
+  height: 36px;
+  cursor: pointer;
+}
+
+/* .add-tyre-button:hover {
+  transition: 0.2s ease;
+  background-color: pink;
+  border: 2px violet solid;
+  cursor: pointer;
+  color: black;
+}
+
+*/
+.inspection-table-mega-container::-webkit-scrollbar {
+  display: none;
+}
+
+.inspection-table-mega-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  border-radius: 15px;
+}
+
+.inspection-table-container {
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.inspection-table {
+  height: 21%;
+  width: 100%;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.inspection-table tr {
+  border-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.ep-btn {
+  /* display: flex; */
+  padding-top: 3px;
+  justify-content: center;
+  display: flex;
+}
+
+.ep-btn button {
+  font-size: 0.9vw;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  width: 6rem;
+  height: 2rem;
+  /* padding: 7px 5px 0px 5px; */
+  border: none;
+  color: #f3f2ad;
+  background-color: #39532f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .ep-btn button:hover {
+  padding: 7px 5px;
+  border: none;
+  background-color: #39532f;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.action-btn button {
+  font-size: 0.9vw;
+  padding: 7px 5px;
+  border: none;
+  color: #39532f;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-eye {
+  color: #39532f,
+}
+
+.action-btn button:hover {
+  padding: 7px 5px;
+  border: none;
+  background-color: #39532f;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-eye:hover {
+  color: #fff;
+}
+
+.excel-btn button {
+
+  justify-content: center;
+  width: 10rem;
+  height: 2rem;
+  background-color: #39532f;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 2px 5px;
+  margin-top: -6px;
+  border-radius: 5px;
+  font-size: 13px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+}
+
+#tyre-quantity-button {
+  height: 2rem;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  color: #938fe4;
+  background-color: #dfdbfa;
+  border-radius: 6px;
+  width: 45px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tyre-Quantity-Button:hover {
+  color: #dfdbfa;
+  background-color: #938fe4;
+
+}
+
+.tooltip .tooltiptext {
+  transform: translateY(-50%);
+  top: 40%;
+  left: 45;
+  display: block;
+  visibility: hidden;
+  width: max-content;
+  background-color: #f5f4fc;
+  color: #5b59b0;
+  text-align: center;
+  padding: 7px 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  transition: ease-out 0.001s smooth;
+  border: 1px solid #a3a0ea;
+  font-weight: 600;
+}
+
+.tooltip div:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.tooltiptext p {
+  padding: 2px;
+}
+
+.date-picker{
+  background-color: white;
+  width: 160px;
+  border-radius: 5px;
+  font-size: 100px;
+  border: 1px solid #ccc !important;
+}
+.date-picker svg{
+  height: 1.1rem;
+  width: 1.1rem;
+}
+.date-picker .MuiOutlinedInput-notchedOutline{
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.pagination-container{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.activePageButton{
+  background-color: #39532f;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 5px;
+  border-radius:5px;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 10px;
+}
+
+.pageButton{
+  margin-left: 10px;
+  padding: 5px;
+  width: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #39532f;
+  height: 1.5rem;
+}
+
+.pageDots{
+  color: #39532f;
+  font-size: 31px;
+  margin-left: 10px;
+}
+.MuiOutlinedInput-notchedOutline{
+  border-color: #ccc !important;
+}
+
+/* generatebtn */
+.generateBtn{
+  padding: 9px;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+
+}

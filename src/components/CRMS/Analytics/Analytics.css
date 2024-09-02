@@ -1,0 +1,144 @@
+.analytics-filter {
+  display: flex;
+  gap: 30px;
+  padding: 0px 25px;
+  /* width: 100%; */
+}
+
+.analytics-filter .analytics {
+  /* width: 100%; */
+  display: flex;
+  /* border: 1px solid #b2b2b2; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.analytics-filter .analytics .analytics-fields {
+  width: 210px;
+  /* width: 100%; */
+}
+
+.all-data-card {
+  /* border: 1px solid black; */
+  /* margin-top: 20px; */
+}
+
+.all-data-card h3 {
+  font-weight: normal;
+  text-align: center;
+  padding: 8px;
+  /* background-color: #a7c7e7; */
+  background-color: #b6d0e2;
+  /* background-color: #87ceeb; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.all-data-card .card-design-visit-summary {
+  border: 1px solid #b2b2b2;
+  padding: 15px;
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-data-card .card-design {
+  border: 1px solid #b2b2b2;
+  padding: 15px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-child {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+/* .table-analytics thead tr th {
+  text-align: center;
+}
+.table-analytics tbody tr td {
+  text-align: center;
+} */
+
+.table-analytics {
+  /* height: 80%; */
+  width: 100%;
+  border: 1px solid red;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 15px;
+}
+
+.table-analytics th {
+  font-weight: 600;
+  font-size: 0.9vw;
+  color: black;
+  padding: 10px 0px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  text-transform: capitalize;
+}
+
+.table-analytics td {
+  text-transform: capitalize;
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 0.9vw;
+  font-weight: 600;
+  height: 100%;
+  border-bottom: 1px solid #b2b2b2;
+  border-collapse: collapse;
+}
+
+.table-analytics td p {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 0.99vw;
+
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1275px) {
+  .all-data-card .card-design h4,
+  p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .all-data-card .card-design h4,
+  p {
+    font-size: 12px;
+  }
+}
+
+.clickable-text-design {
+  color: #ea4c89;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  min-width: 40px;
+}
+
+.clickable-text-design-simp {
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  min-width: 40px;
+}
+
+.dash-design {
+  min-width: 30px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+}

@@ -1,0 +1,134 @@
+.claims-container {
+    padding: 15px;
+    height: 715px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    /* overflow: scroll; */
+}
+
+.claims-container .tabs{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.claims-container .tabs button {
+    width: 50%;
+    font-size: 0.85vw;
+    padding: 8px 10px;
+    max-width: none;
+}
+
+.claims-table{
+    /* height: 80%; */
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: white;
+    overflow: scroll;
+}
+
+.claims-table th {
+    font-weight: 700;
+    background-color: white;
+    height: 30px;
+    font-size: 0.85vw;
+    color: black;
+    padding: 1rem 0.1rem;
+    text-align: center;
+    text-transform: capitalize;
+    border-bottom: solid rgba(0, 0, 0, 0.5) 0.5px;
+}
+
+.claims-table td {
+    text-transform: capitalize;
+    margin-top: 5px;
+    padding: 1rem 0.1rem;
+    text-align: center;
+    font-size: 0.85vw;
+    font-weight: 600;
+    /* background-color: white; */
+    height: 100%;
+    border-bottom: solid rgba(0, 0, 0, 0.3) 0.5px;
+}
+.claim-retreader{
+    width: 140px;
+    margin: auto;
+}
+
+
+.tyre-claims-modal{
+    width: 100%;
+}
+.tyre-claims-modal .title{
+    font-weight: 600;
+    color: #000;
+    padding: 15px;
+}
+.tyre-claims-modal .description{
+    font-weight: normal;
+    font-size: 18px;
+    padding: 15px;
+}
+.tyre-claims-modal .action-div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+}
+.tyre-claims-modal .action-div .closebtn{
+    border: none;
+    outline: none;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #6c757d;
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.tyre-claims-modal .action-div .confirmbtn{
+
+    border: none;
+    outline: none;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #0d6efd;
+    color: #fff;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+
+}
+
+.tyre-claims-modal .action-div .closebtn:hover{
+     background-color: #565e64;
+}
+.tyre-claims-modal .action-div .confirmbtn:hover{   
+    background-color: #0a58ca;
+}
+
+
+.table-data-claim-web{
+    background-color: #fff;
+
+}
+
+
+.table-data-claim-web:hover{
+    background-color: #f0f0f0;
+    /* background-color: #E8E8E8; */
+
+}
+.table-data-claim-web td {
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.9vw;
+    font-weight: 600;
+    height: 100%;
+    align-items: center;
+  }

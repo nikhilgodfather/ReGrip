@@ -1,0 +1,277 @@
+/* .MuiSheet-root{
+    padding: 0;
+} */
+.generateRequest {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+}
+
+.generateRequest-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #ffff;
+    width: 23rem;
+    height: 54%;
+    border-radius: 0.8rem;
+}
+
+.generateRequest .date-picker {
+    width: 100% !important;
+}
+
+.generateRequest-head {
+    display: flex;
+    justify-content: center;
+    background-color: #ffff;
+    padding: 0.5rem 0.7rem;
+    align-items: center;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+
+.generateRequest-head > .heading {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color:#53a336;
+}
+
+.generateRequest-form-input select {
+  border-radius: 7px;
+  /* padding: 9px; */
+  border: 1px solid #babfc4;
+}
+
+.generateRequest-form-input input {
+    border: none !important;
+}
+
+.heading h2 {
+    font-size: 20px;
+    color: #f3f2ad;
+    font-weight: 400;
+}
+
+.heading>.edit-btn {
+    font-size: 16px;
+    color: #f3f2ad;
+    cursor: pointer;
+}
+
+.generateRequest-head > .close-btn > button {
+  background: none;
+  border: none;
+  font-size: 19px;
+  margin: 6px 5px 0 0;
+  cursor: pointer;
+}
+
+.generateRequest-form {
+    background-color: #ffff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    /* height: 100%; */
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    overflow-y: auto;
+    gap: 12px;
+}
+
+.generateRequest-form::-webkit-scrollbar {
+    width: 19px;
+    background-color: #ffff;
+    height: 1rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.generateRequest-form::-webkit-scrollbar-track {
+    background-color: #ffff;
+    border-bottom-right-radius: 0.6rem;
+}
+
+.generateRequest-form::-webkit-scrollbar-track-piece:start {
+    margin-top: 30px;
+    background-color: #ffff;
+}
+
+.generateRequest-form::-webkit-scrollbar-track-piece:end {
+    margin-bottom: 30px;
+    background-color: #ffff;
+}
+
+.generateRequest-form::-webkit-scrollbar-thumb {
+  background-color: #588048;
+  border-radius: 20px;
+  border: 7px solid transparent;
+  background-clip: content-box;
+}
+
+.generateRequest-form-input {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.generateRequest-form-type-input {
+    border: 1px solid lightgray;
+    display: flex;
+    border-radius: 0.6rem;
+    padding: 3px;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.generateRequest-form-type-button {
+    width: 100%;
+    padding: 8px 0px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.generateRequest-form-type-selected {
+    background-color: #53a336;
+    color: white;
+}
+
+.generateRequest-form-input label {
+    font-size: 0.9vw;
+    /* font-size: 14px; */
+    margin-bottom: 2px;
+    font-weight: 400;
+}
+
+.generateRequest-form-input input {
+    font-size: 0.9vw;
+    padding: 5px;
+    border: 1px solid hsl(210, 8%, 75%);
+    border-radius: 0.5rem;
+}
+
+.generateRequest-form-type-input {
+  border: 1px solid lightgray;
+  display: flex;
+  border-radius: 0.5rem;
+  padding:5px;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.generateRequest-form-type-button{
+    width:100%;
+    padding:15px 0px;
+    background-color: transparent;
+    border:none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.generateRequest-form-type-selected{
+    background-color: #53a336;
+    color:white;
+}
+
+.chk-inp,
+.chk-inp-2 {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  margin-bottom: 0.4rem;
+}
+
+.chk-inp label,
+.chk-inp-2 label {
+  font-size: 12px;
+  color: #53a336;
+  margin: 0;
+}
+
+input[type="checkbox"] {
+  accent-color: #39532f;
+}
+
+#gst-checkbox,
+#bank-details-checkbox {
+  padding: 0;
+  margin: 2px 5px 0 1px;
+}
+
+.generateRequest-submit-btn {
+    margin: 0.5rem 0px;
+    padding: 0.4rem 2rem;
+    border: none;
+    width: 150px;
+    align-self: center;
+    background-color: #53a336;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.custom-toast-container {
+    font-size: 15px;
+    color: #53a336;
+    position: bottom;
+}
+
+.Toastify__toast {
+    border-radius: 10px;
+    color: #53a336;
+    height: 50px !important;
+    min-height: 0px !important;
+}
+
+.Toastify__toast-body {
+    height: 30px;
+    padding: 0px 6px !important;
+    margin-bottom: 2px !important;
+}
+
+.generateRequest input[type="text"] {
+    height: 14px;
+    padding: 10.5px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* color: rgb(0,0,0,0.5); */
+    /* font-size: 0.92vw; */
+    background-color: white;
+}
+
+.background-color {
+    background-color: white !important;
+}
+
+.download-sample{
+    display: flex;
+    outline: none;
+    border: none;
+    font-size: 0.9vw;
+    border-radius: 10px;
+    padding: 5px 12px;
+    background: transparent;
+    text-align: center;
+    align-items: center;
+}
+
+.download-sample a{
+    text-decoration: underline;
+    color: rgba(49, 99, 114, 255);
+    font-size: 0.9vw;
+    font-weight: normal;
+
+}

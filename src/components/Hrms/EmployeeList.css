@@ -1,0 +1,16 @@
+.Employee-individual-detail-button {
+  border: 0.5px solid #84c2f8;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 5px 12px;
+  background-color: #d9edff;
+  border: 1px solid rgb(198, 225, 247);
+  cursor: pointer;
+  color: #388dd8;
+}
+
+.Employee-individual-detail-button:hover {
+  color: white;
+  background-color: #65b7ff;
+}

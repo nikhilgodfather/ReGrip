@@ -1,0 +1,32 @@
+.all-attendance-container{
+}
+
+.all-attendance{
+    width: 100%;
+}
+
+.all-attendance .info-icon{
+    width: 15;
+    height: 15;
+    margin-left: 2px;
+    /* position: absolute; */
+    /* margin-top: 20px; */
+}
+
+.all-attendance .check-in-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: rgb(0,0,0, 0.7);
+    font-size: 0.97vw;
+}
+
+.current-date {
+    /* background-color: #bbcfbb !important; */
+    background-color: #fff !important;
+  }
+
+  .last-cell {
+    border-top-right-radius: 10px;
+  }

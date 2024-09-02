@@ -1,0 +1,134 @@
+.main-searcg-modal-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 35px 10px;
+}
+
+.heading-image-of-serialnum {
+  width: 100%;
+  max-width: 350px;
+  height: 130px;
+}
+
+.middle-show-data {
+  display: flex;
+  gap: 15px;
+  /* border: 1px solid red; */
+}
+
+.middle-show-data .section-one {
+  width: 50%;
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-one-child {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+.section-one-child .data-one {
+  background-color: #ffd966;
+  border: 2px solid black;
+  max-width: 220px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.2vw;
+  display: block;
+  padding: 0px 0px 0px 2px;
+}
+
+.middle-show-data .section-two {
+  width: 50%;
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.middle-show-data .section-two .section-one-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.middle-show-data .section-two .section-one-child .data-one {
+  background-color: #a9d08e;
+  border: 2px solid black;
+  max-width: 220px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 1.2vw;
+  display: block;
+}
+
+.image-parent-data {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* padding: 0px 15px; */
+}
+.image-parent-data .image-parent-child {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+.image-parent-data .image-parent-child .image-child-data {
+  width: 40%;
+  height: 280px;
+}
+.image-parent-data
+  .image-parent-child
+  .image-child-data
+  .image-child-main-image {
+  border: 1px solid #000;
+  width: 100%;
+  height: 90%;
+}
+
+.image-parent-data
+  .image-parent-child
+  .image-child-data
+  .image-child-main-head {
+  height: 10%;
+  font-size: 1vw;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.image-size-modal {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .image-parent-data .image-parent-child .image-child-data {
+    width: 40%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .image-parent-data .image-parent-child .image-child-data {
+    width: 40%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image-parent-data .image-parent-child .image-child-data {
+    width: 45%;
+    height: 180px;
+  }
+}

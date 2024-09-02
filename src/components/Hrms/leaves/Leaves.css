@@ -1,0 +1,22 @@
+.leaves-main {}
+
+.leaves-main .select-component {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 10px;
+}
+
+.leaves-main .select-component .fields {
+    width: 220px;
+}
+
+.Fleet-header-leaves {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.leaves-main .select-component .button-leaves {
+    border: #39532f;
+}

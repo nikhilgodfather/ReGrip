@@ -1,0 +1,462 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+.card-container {
+  width: 34%;
+  border-radius: 15px;
+  display: grid;
+  gap: 20px;
+}
+
+h1 {
+  /* margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize; */
+}
+
+.home-container .card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+  /* height: 10px; */
+  border-radius: 20px;
+  padding: 10px 15px;
+  justify-content: center;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #4d4d4d !important;
+}
+
+.home-container .card .dashboard-data {
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  /* justify-content: center; */
+  display: grid;
+  width: 31%;
+  cursor: pointer;
+}
+
+.home-container .card .dashboard-data:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.home-container .card .dashboard-data h3 {
+  font-size: 0.9vw;
+  padding: 10px 0px;
+  color: black;
+}
+
+.home-container .card .dashboard-data .data {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0px;
+  justify-content: center;
+}
+
+.home-container .card .dashboard-data .data h5 {
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
+.home-container .card .dashboard-data .data span {
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.home-container .card h4 {
+  color: #65a143;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.3vw;
+}
+
+.home-container .card img {
+  width: 34px;
+}
+
+.home-container .card .category-container {
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading-text-tyre-inspection {
+  text-align: start;
+  width: 100%;
+}
+
+.heading-text-total-suppliers {
+  text-align: end;
+  width: 100%;
+}
+
+.home-container .card h3 {
+  font-weight: normal;
+  font-size: 1.05vw;
+  font-family: inherit;
+  line-height: 12px;
+}
+
+.vert-line {
+  height: 0.1px;
+  width: 92%;
+  margin: 0px auto;
+  border-top: 0.51px solid rgba(0, 0, 0, 0.2);
+}
+
+/* pending inspection */
+.assignment-pendings {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pending-inspection-div {
+  /* border: 1px solid red; */
+  /* width: 100%; */
+  text-align: center;
+}
+
+/* .card h3, */
+.tyre-category-card h3 {
+  color: #65a143;
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+.tyre-category-card {
+  color: #65a143;
+  width: 94%;
+  height: 360px;
+  border-radius: 20px;
+  box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  padding: 7px 11px 12px 11px;
+}
+
+.tyre-category-card img {
+  width: 30px;
+  height: 30px;
+}
+
+.tyre-category {
+  width: 95%;
+  margin: -7px 0px 0px 0px;
+}
+
+.home-container .card-item {
+  display: flex;
+  padding: 5px 10px 5px 20px;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 34px;
+  background: rgba(118, 118, 118, 0.07);
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-item p {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9vw;
+  display: flex;
+  align-items: center;
+}
+
+.card-item p img {
+  width: 35px;
+  height: 35px;
+  padding: 3px;
+  margin-left: 5px;
+}
+
+.sub-card-item p {
+  color: #fff;
+  font-weight: 700;
+}
+
+.sub-card-item {
+  background-color: #65a143;
+  border-radius: 75px;
+  display: flex;
+  width: 93px;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tyre-category-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tyre-category-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 16px;
+  align-items: center;
+}
+
+.tyre-category-top h2 {
+  font-size: 1.4vw;
+  color: #65a143;
+  font-weight: 600;
+}
+
+.tyre-category-top .tyre-category-heading h2 {
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 600;
+  color: #65a143;
+  /* line-height: normal; */
+}
+
+.header-container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  margin-top: 10px;
+  /* padding-top: 0; */
+}
+
+.header-container h1 {
+  color: #6c6c6b;
+  font-size: 1.6vw;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  width: 68%;
+}
+
+.search-container input {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 25px 25px 25px 25px;
+  width: 100%;
+  border: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  padding: 6px 0px 6px 20px;
+  height: 34px;
+  align-items: center;
+}
+
+.search-container input:focus {
+  outline: 2px solid #65a143 !important;
+  background: #fff !important;
+}
+
+.search-container input:focus + .search-btn {
+  background-color: #65a143;
+}
+
+.search-btn {
+  display: flex;
+  /* padding: 6px 12px 7px 12px;   */
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  background: #2e2e38;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  /* margin: 4px 8px; */
+  position: absolute;
+  right: -1;
+  padding: 6px 18px;
+}
+
+.search-btn:active {
+  background-color: #65a143;
+  color: #fff;
+}
+
+.search-btn img {
+  margin: 0px 0px 0px 10px;
+}
+
+.searchingResult {
+  justify-content: space-around;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  height: 58px;
+  align-items: center;
+  border-radius: 27px;
+  background: rgba(101, 161, 67, 0.05);
+  /* justify-content: space-around; */
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.searchingResult td {
+  min-width: 20px;
+  text-align: center;
+}
+
+.searchingResult span {
+  padding: 10px;
+  color: #1a1a1a;
+  font-size: 0.9vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.search-result {
+  position: absolute;
+  height: 260px;
+  margin-top: 40px;
+  overflow: scroll;
+  width: 100%;
+  background-color: white;
+  border-radius: 27px;
+  z-index: 2;
+}
+
+.content {
+  display: flex;
+  /* margin-top: 40px; */
+}
+
+.notification-icons-design {
+  width: fit-content;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1300px) {
+  .home-container .card {
+    height: fit-content;
+  }
+
+  .tyre-category-card {
+    color: #65a143;
+    /* width: 90%; */
+    /* height: 340px; */
+    border-radius: 20px;
+    box-shadow: 3px 4px 6px 0px rgba(0, 0, 0, 0.25);
+    padding: 7px 11px 12px 11px;
+  }
+}
+
+/* pie charts */
+
+/* colors-for-category-start */
+.pie-category .line-design-A {
+  width: 50px;
+  height: 10px;
+  background-color: #7389ae;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.pie-category .line-design-B {
+  width: 50px;
+  height: 10px;
+  background-color: #58a4b0;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.pie-category .line-design-C {
+  width: 50px;
+  height: 10px;
+  background-color: #e0d68a;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.pie-category .line-design-CC {
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.pie-category .line-design-D {
+  width: 50px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #dc9596;
+  border: none;
+  outline: none;
+}
+
+/* colors-for-category-end */
+
+.legend-label-custom {
+  font-weight: 300;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.legend-label-custom h4 {
+  font-weight: 500;
+  /* font-size: 29px; */
+}
+
+.legend-label-custom-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-main {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-main .category-name {
+  /* border: 1px solid red; */
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.category-main .category-value {
+  /* border: 1px solid red; */
+  font-size: 16px;
+  font-weight: normal;
+  color: #000;
+}
+
+.bar-graph {
+  color: red;
+}
+
+.view-eye-home {
+  color: #39532f;
+}
+
+.view-eye-home:hover {
+  color: #3e672e;
+
+}

@@ -1,0 +1,82 @@
+.home-assignment {
+    padding: 15px;
+    height: 715px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 22px;
+    /* overflow: scroll; */
+    display: flex;
+    flex-direction: column;
+}
+
+.home-assignment .tabs{
+    margin-bottom: 20px;
+}
+
+.home-assignment .tabs button {
+    width: 25%;
+    font-size: 0.85vw;
+    padding: 8px 10px;
+}
+
+.home-assignment .table-container {
+    height: 92%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.inspection-request-table .table-container {
+    height: 90%;
+    overflow: scroll;
+}
+
+.inspection-request-table{
+    /* height: 80%; */
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: white;
+    overflow: scroll;
+}
+
+.inspection-request-table th {
+    font-weight: 700;
+    background-color: white;
+    height: 30px;
+    font-size: 0.85vw;
+    color: black;
+    padding: 1rem 0.1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.inspection-request-table td {
+    text-transform: capitalize;
+    margin-top: 5px;
+    padding: 6px;
+    text-align: center;
+    font-size: 0.85vw;
+    font-weight: 600;
+    /* background-color: rgba(233, 136, 98, 0.10); */
+    background-color: rgba(211, 112, 242, 0.1);
+    height: 100%;
+    border-bottom: 5px solid white;
+    /* Adjust the border thickness as needed */
+}
+
+.generateRequestBtn {
+    border: 1px solid green;
+    height: 2rem;
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: #53a336;
+    border-radius: 6px;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    font-size: 0.9vw;
+    font-weight: 400;
+    cursor: pointer;
+}

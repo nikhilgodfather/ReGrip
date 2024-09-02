@@ -1,0 +1,118 @@
+.table-customer th {
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #39532F !important;
+  color: #f3f2ad !important;
+}
+
+.table-customer .MuiTableHead-root {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  /* You can change this color as needed */
+  z-index: 1;
+}
+.edit-button {
+  background-color: black;
+  padding: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30px;
+  margin: 0 auto;
+}
+
+.autocomplete-option .autocomplete-chip {
+  background: rgb(224, 131, 131);
+}
+
+.name-transporter-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.chip-container-customer {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-transporter-type .dealer {
+  text-transform: capitalize;
+  width: fit-content;
+  display: flex;
+  outline: none;
+  border: none;
+  font-size: 0.7vw;
+  font-weight: normal;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  text-align: center;
+  align-items: center;
+  background: rgb(255, 149, 149);
+}
+
+.name-transporter-type .transporter {
+  text-transform: capitalize;
+  width: fit-content;
+  display: flex;
+  outline: none;
+  border: none;
+  font-size: 0.7vw;
+  font-weight: normal;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  text-align: center;
+  align-items: center;
+  background: rgb(167, 224, 131);
+}
+
+.header-button-add-customer {
+  padding: 0.4rem 1rem;
+  height: 2rem;
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 6px;
+  box-shadow: 4px 4px 4px rgba(53, 53, 53, 0.523);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9vw;
+}
+
+.customer-chip-transporter {
+  text-transform: capitalize;
+  /* margin-left: auto; */
+  width: fit-content;
+  display: flex;
+  outline: none;
+  border: none;
+  font-size: 0.85vw;
+  font-weight: normal;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  background: #ea4c89;
+  text-align: center;
+  align-items: center;
+}
+
+.customer-chip-dealer {
+  text-transform: capitalize;
+  /* margin-left: auto; */
+  width: fit-content;
+  display: flex;
+  outline: none;
+  border: none;
+  font-size: 0.85vw;
+  font-weight: normal;
+  color: white;
+  border-radius: 20px;
+  padding: 2px 10px;
+  background: rgba(121, 28, 147, 0.72);
+  text-align: center;
+  align-items: center;
+}

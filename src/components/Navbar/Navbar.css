@@ -1,0 +1,220 @@
+.main-navbar-div {
+    min-height: 2.9rem;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    left: 0%;
+    background-color: #39532F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 9%;
+    min-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-logo {
+    /* margin: 5px; */
+}
+
+.sidebar-menu {
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 0 0.6rem;
+    cursor: pointer;
+}
+
+.search-bar {
+    min-width: 95%;
+    padding: 0.4em 1em 0.4em 2em;
+    font-size: 17px;
+    border: 1px solid #0000003e;
+    border-radius: 0.5rem;
+}
+
+.navbar form {
+    flex-grow: 0.5;
+    position: relative;
+}
+
+.navbar .search-icon {
+    position: absolute;
+    left: 0.4em;
+    top: 0.5em;
+    font-size: 1.1em;
+}
+
+.notification-box {
+    max-width: 10em;
+    position: relative;
+    width: 100%;
+}
+
+/* .lg-btn {
+    background-color: #ffffff;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    display: flex;
+} */
+/* 
+.lg-btn span {
+    padding: 0 0.4rem;
+    font-size: 15px;
+} */
+
+.dropdown-msg-btn {
+    background: #ffffff;
+    font-size: 15px;
+    width: 100%;
+    border: none;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.7em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.arrow {
+    transition: transform ease-in-out 0.3s;
+    margin: 0.3rem 0 0 0.7rem;
+}
+
+.dropdown-content {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 200;
+    top: 100%;
+    background-color: black;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 0.5rem;
+    border-radius: 0.5em;
+}
+
+input[type="checkbox"]:checked~.dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked+label>.arrow {
+    transform: rotate(180deg);
+}
+
+#dropdown {
+    opacity: 0;
+    position: absolute;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 0.7em 0.5em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        min-width: 95%;
+    }
+
+    .navbar .search-bar {
+        width: 5rem;
+    }
+
+    .navbar .notification-box {
+        width: 5rem;
+        /* margin-left: 1rem; */
+
+        /* comment  */
+
+        /* display: none; */
+    }
+
+    .navbar .dropdown-msg-btn {
+        /* background-color: red; */
+        /* width: 3rem; */
+
+        padding: 0.5rem .7rem;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .navbar .notification-txt {
+        display: none;
+    }
+
+    .navbar .arrow {
+        display: none;
+    }
+
+    .lg-txt {
+        display: none;
+    }
+
+    .logOut-box {
+        margin-right: 1rem;
+    }
+
+    .lg-btn {
+        padding: .5rem;
+    }
+
+    .sidebar-menu img {
+        width: 25px;
+    }
+
+    .company-logo img {
+        width: 80px;
+    }
+
+    .dropdown-content {
+        width: calc(100% + 80%);
+    }
+}
+
+/* @media only screen and (max-width: 1045px) {
+    .navbar {
+        min-width: 90%;
+    }
+
+    .navbar .search-bar {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+} */
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        min-width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        min-width: 90%;
+    }
+
+    .navbar .search-bar {
+        display: none;
+    }
+
+    .search-icon {
+        display: none;
+    }
+}

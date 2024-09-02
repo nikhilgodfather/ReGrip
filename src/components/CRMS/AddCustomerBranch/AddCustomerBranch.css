@@ -1,0 +1,52 @@
+.addBranch-customer-main{
+    height: 100%;
+    overflow: hidden;
+}
+.addBranch-customer-main .scrolling-view{
+    height: 100%;
+    overflow: scroll;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.field-addBranch{
+    width: 230px;
+    font-size: 0.95vw;
+}
+
+.addBranch-customer-main .scrolling-view .field-align{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.addBranch-customer-main .addBranch-btn{
+    padding: 0.5rem 1.5rem !important;
+    border: none !important;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-radius: 20px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    font-size: 0.9vw !important;
+    margin: 0px auto 0px auto !important;
+    width: 180px;
+
+}
+
+
+@media only screen and (max-width: 1380px){
+    .field-addBranch{
+        width: 200px;
+    }
+    .add-customer-field-main-fields {
+        gap: 30px;
+    }
+  }

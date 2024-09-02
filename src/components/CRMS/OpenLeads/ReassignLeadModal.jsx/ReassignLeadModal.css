@@ -1,0 +1,18 @@
+.addFleet-form-reassign {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.addFleet-form-input-reassign{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.addFleet-form-reassign .autocomlpete {
+    width: 100%;
+    padding: 0 10px !important;
+        /* border: none !important; */
+        font-size: 1vw;
+}

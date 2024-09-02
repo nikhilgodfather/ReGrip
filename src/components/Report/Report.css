@@ -1,0 +1,108 @@
+.report-cont-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.table-container-for-report {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 2px #e2e2e2;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.table-container-for-report .sheet-table {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.table-container-for-report .heading-report {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1vw;
+  padding: 6px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  background-color: #ffdd40;
+}
+
+/* table-css */
+/* .table-container-for-report .report-chart-all-table {
+} */
+
+.table-container-for-report .report-chart-all-table,
+.table-chart-th,
+.table-chart-td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.table-container-for-report .table-chart-th {
+  background-color: #80da56;
+  font-size: 1vw;
+}
+
+.table-container-for-report .report-chart-all-table tr {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+.table-container-for-report
+  .report-chart-all-table
+  tr:nth-child(odd)
+  .table-chart-td {
+  background-color: white;
+}
+
+.table-container-for-report
+  .report-chart-all-table
+  tr:nth-child(even)
+  .table-chart-td {
+  background-color: #f3cfc6;
+}
+/* table-css */
+
+/* component */
+.all-report-parent{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.all-report-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* component */
+
+/* Charts-css */
+.chart-main-report {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  background-color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 10px;
+}
+
+/* .chart-child-report {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+/* Charts-css */

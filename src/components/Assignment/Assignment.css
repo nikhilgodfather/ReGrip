@@ -1,0 +1,173 @@
+.assignment-container {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.assignment {
+    display: flex;
+    flex-direction: column;
+}
+
+.assignment .card-container {
+    flex-wrap: wrap;
+    /* flex: 1; */
+    gap: 20px;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* .left-card-container, .right-card-container{
+    width: 50%;
+    height: 100%;
+    border-radius: 15px;
+    display: grid;
+    gap: 20px;
+} */
+
+.assignment .card {
+    cursor: pointer;
+    width: 32%;
+    /* height: 280px; */
+    border-radius: 20px;
+    padding: 15px 20px;
+    justify-content: space-between;
+    /* box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.assignment .card .card-header {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.assignment .card-content {
+    gap: 13px;
+    display: grid;
+}
+
+.assignment .card-header .card-heading {
+    font-weight: 600;
+    font-size: 0.9vw;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    text-align: left;
+}
+
+.assignment .card-header .card-heading img{
+    width: 25px;
+}
+
+.card-line {
+    margin: 10px auto;
+    height: 0;
+    border-bottom: 0.1px solid rgb(169, 169, 169);
+}
+
+.card-chip-increased {
+    height: fit-content;
+    background-color: #def4f9;
+    color: #27a3bc;
+    border: 0.5px solid #27a3bc;
+    border-radius: 20px;
+    font-size: 0.75vw;
+    font-weight: 500;
+    padding: 3px 8px;
+}
+
+.card-chip-decreased {
+    height: fit-content;
+    background-color: #fff3ef;
+    color: #d05a35;
+    border: 0.5px solid #d05a35;
+    border-radius: 20px;
+    font-size: 0.75vw;
+    font-weight: 500;
+    padding: 3px 8px;
+}
+
+.assignment .card-item {
+    height: 25px;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.assignment .card-item .filler-text {
+    width: 65px;
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.assignment .card-item .filler {
+    flex: 1;
+    background-color: #e0ecd9;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    font-size: 0.9vw;
+}
+
+.progress-bar-fill {
+    align-items: center;
+    display: grid;
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    animation: progressBarAnimation 0.8s ease-in-out forwards;
+}
+
+.remaining {
+    align-items: center;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #138717;
+    animation: remainingAnimation 0.8s ease-in-out forwards;
+}
+
+@keyframes progressBarAnimation {
+    to {
+        width: var(--dynamic-width);
+    }
+}
+
+@keyframes remainingAnimation {
+    to {
+        width: var(--dynamic-width);
+    }
+}
+
+.progress-bar-fill.animate {
+    width: 75%;
+}
+
+.assignment-container .item-info {
+    display: grid;
+    gap: 5px;
+}
+
+.assignment-container .item-info .info {
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    gap: 10px;
+}
+
+.assignment-container .item-info .info-chip {
+    width: 40px;
+    background-color: #65a143;
+    border-radius: 10px;
+    height: 10px;
+}

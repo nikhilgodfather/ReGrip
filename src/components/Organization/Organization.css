@@ -1,0 +1,9 @@
+.organization-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }

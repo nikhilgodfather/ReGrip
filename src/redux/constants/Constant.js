@@ -1,0 +1,11 @@
+export const GET_USER_DETAILS = "GET_USER_DETAILS";
+export const GET_DEFECT_TYPES = "GET_DEFECT_TYPES";
+export const GET_CURRENT_USER_DETAILS = "GET_CURRENT_USER_DETAILS";
+export const JK_ROLE_ID = 2;
+export const BRIDGESTONE_ROLE_ID = 3;
+export const REGRIP_ROLE_ID = 1;
+export const REGRIP_SUPPLIER_BRAND_ID = 1;
+export const JK_SUPPLIER = "JK";
+export const REGRIP_SUPPLIER = "Regrip";
+export const BRIDGESTONE_SUPPLIER = "Bridgestone";
+export const UPDATE_NOTIFICATION_COUNT = 0;

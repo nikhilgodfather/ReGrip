@@ -1,0 +1,190 @@
+.report-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    height: fit-content;
+}
+
+.report-main {
+    height: fit-content;
+}
+
+.report-main {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 15px 0px;
+    gap: 10px;
+}
+
+.report-filters .reports-filter-selectors {
+    width: 120px;
+    /* border: 1px solid red; */
+}
+
+.reports-filter-selectors .MuiAutocomplete-input {
+    font-size: 12px;
+    color: black;
+    opacity: 1;
+    font-size: 0.9vw;
+    width: 50px;
+}
+
+.reports-filter-selectors .MuiSelect-button {
+    font-size: 0.9vw;
+    /* opacity: 0.6; */
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.report-filters .DateRangePicker_picker {
+    left: 50px;
+    z-index: 2;
+}
+
+.table-leads {
+    flex: 1;
+}
+
+.table-customer .MuiTableCell-root {
+    font-size: 10px;
+}
+
+.report-filters .DateInput_input {
+    font-size: 12px;
+}
+
+.table-report .MuiTableCell-root {
+    font-size: 10px;
+}
+
+/*  */
+.table-customer {
+    overflow-y: scroll;
+    /* Set overflow-y to auto */
+    /* Set a maximum height to trigger scrolling */
+}
+
+.report-filters .reports-filter-selectors {
+    border: 1px solid #dbdbdb;
+    /* color: black; */
+    align-items: center;
+}
+
+.start-end-date input[type="text"i] {
+    padding: 4.7px;
+    font-size: 0.9vw;
+    border-radius: 5px !important;
+    text-align: center;
+    background-color: var(--joy-palette-background-surface, var(--joy-palette-neutral-50, #FBFCFE));
+    /* color: var(--variant-outlinedColor, var(--joy-palette-neutral-outlinedColor, var(--joy-palette-neutral-700, #32383E))); */
+    /* color: black; */
+    /* opacity: 0.6; */
+
+}
+
+.start-end-date .DateInput {
+    border-radius: 6px;
+}
+
+.DateRangePickerInput__withBorder {
+    border-radius: 6px !important;
+    width: 260px;
+}
+
+.table-customer .MuiTableHead-root {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    /* You can change this color as needed */
+    /* z-index: 1; */
+}
+
+.table-customer .MuiTableCell-head {
+    font-size: 0.85vw;
+    background-color: #c0ced4;
+    line-height: 1.4;
+    min-width: 170px;
+    color: rgb(0, 0, 0, 0.6);
+    padding: 18px;
+}
+
+.table-customer .MuiTableCell-body {
+    font-size: 0.87vw;
+    font-weight: 500;
+    height: 35px;
+    padding: 15px;
+    max-width: none;
+    width: fit-content;
+    max-height: 35px;
+    background-color: transparent;
+}
+
+.report-filters .apply-button {
+    align-items: center;
+    padding: 8px 15px;
+    height: 18px;
+}
+
+.report-filters .apply-button p {
+    height: 23px;
+}
+
+.button-grp {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    text-align: right;
+    justify-content: right;
+}
+
+.sicky_column {
+    /* font-size: 50px; */
+    position: sticky;
+    left: 0;
+    box-shadow: 1px 0 var(--TableCell-borderColor);
+    /* background-color: background.surface; */
+    /* z-index: 999 */
+}
+
+.DateInput {
+    width: 115px !important;
+}
+
+.chips-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: end;
+}
+
+.chips-container .chip {
+    display: flex;
+    outline: none;
+    border: none;
+    font-size: 0.85vw;
+    font-weight: normal;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 12px;
+    background: rgba(49, 99, 114, 255);
+    text-align: center;
+    align-items: center;
+}
+
+.chips-container .clear-all{
+    display: flex;
+    outline: none;
+    border: none;
+    font-size: 0.9vw;
+    font-weight: normal;
+    color: rgba(49, 99, 114, 255);
+    border-radius: 10px;
+    padding: 5px 12px;
+    background: transparent;
+    text-align: center;
+    align-items: center;
+}

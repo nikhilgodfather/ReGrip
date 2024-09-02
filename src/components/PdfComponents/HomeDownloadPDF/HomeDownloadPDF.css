@@ -1,0 +1,8 @@
+.download-button{
+    padding: 7px;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    /* margin: auto; */
+}

@@ -1,0 +1,118 @@
+.details {
+  width: 90%;
+  height: 560px;
+  border-radius: 15px;
+  background-color: white;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px auto;
+  position: relative;
+}
+
+.main-container-personal {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-container-office {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-container-personal .employee-head {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.main-container-office .employee-head {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container-personal p {
+  display: grid;
+  padding: 5px 0px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 17px;
+}
+.main-container-office p {
+  display: grid;
+  padding: 5px 0px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.main-container-personal p span {
+  padding: 5px 0px;
+  color: #a8acbc;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.main-container-office p span {
+  padding: 5px 0px;
+  color: #a8acbc;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.line {
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  margin: 25px 0px;
+}
+
+.personalDetailsInputData {
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.header-button-employee-update {
+  padding: 0.4rem 1rem !important;
+  height: 2rem !important;
+  margin-bottom: 15px !important;
+  width: 150px;
+  border: none !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+  position: absolute !important;
+  position: "absolute";
+  left: 44% !important;
+  transform: "translateX(-44%)" !important;
+  bottom: 0;
+}
+
+/* new css */
+.update-align-employees {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.custom-checkbox .MuiCheckbox-label {
+  color: #000 !important;
+}
+
+.custom-checkbox .MuiCheckbox-checkbox {
+  color: #fff !important;
+}

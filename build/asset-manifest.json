@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a09aed79.css",
+    "main.js": "/static/js/main.1398f1d9.js",
+    "static/js/703.d1459c28.chunk.js": "/static/js/703.d1459c28.chunk.js",
+    "static/js/513.6f723c1e.chunk.js": "/static/js/513.6f723c1e.chunk.js",
+    "static/media/sunil-shetty.jpg": "/static/media/sunil-shetty.e61f04fcb0d80168752f.jpg",
+    "static/media/logo_black.png": "/static/media/logo_black.bfd54c4abbc8b07f1c83.png",
+    "static/media/profile.png": "/static/media/profile.92c5cf17983e3507f5c8.png",
+    "static/media/jktyre-tyre-logo.png": "/static/media/jktyre-tyre-logo.f6d635a383b4940c9db2.png",
+    "static/media/Bridgestone_profile1.png": "/static/media/Bridgestone_profile1.bdad886c232cc57f9c1e.png",
+    "static/media/regrip-logo.png": "/static/media/regrip-logo.493e650949a52a8368f0.png",
+    "static/media/sorry-item-not-found.png": "/static/media/sorry-item-not-found.ec58a72c6475492e7f00.png",
+    "static/media/employee_profile.png": "/static/media/employee_profile.4b4e57864f2a8b08d686.png",
+    "static/media/copyright.png": "/static/media/copyright.6778a20efbe0a15e5dfc.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/Test_EXCEL.xlsx": "/static/media/Test_EXCEL.2684ba50b8508a91a878.xlsx",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.a09aed79.css.map": "/static/css/main.a09aed79.css.map",
+    "main.1398f1d9.js.map": "/static/js/main.1398f1d9.js.map",
+    "703.d1459c28.chunk.js.map": "/static/js/703.d1459c28.chunk.js.map",
+    "513.6f723c1e.chunk.js.map": "/static/js/513.6f723c1e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a09aed79.css",
+    "static/js/main.1398f1d9.js"
+  ]
+}

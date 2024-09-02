@@ -1,0 +1,100 @@
+.table-mega-container::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.Fleet-container {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    min-height: 50%;
+    height: 100%;
+
+}
+
+.Fleet-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.table-mega-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 15px;
+}
+
+.Fleet-table {
+    /* height: 80%; */
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.Fleet-table tr {
+    border-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+
+
+.edit-btn {
+    background-color: #0400CF;
+    padding: 9px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.dlt-btn {
+    padding: 9px;
+    background-color: #cf0000;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.branch-btn {
+    padding: 9px;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fd:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(67, 67, 231);
+
+}
+
+/* .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eye-btn {
+    background-color: #F3F2AD;
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.spp-edit-btn {
+    background-color: #0400CF;
+    padding: 7px;
+    border-radius: 5px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.spp-dlt-btn {
+    padding: 7px;
+    background-color: #cf0000;
+    border-radius: 5px;
+    cursor: pointer;
+} */

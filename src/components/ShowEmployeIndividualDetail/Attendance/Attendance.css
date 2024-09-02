@@ -1,0 +1,41 @@
+.status span {
+    width: 120px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3px 12px;
+    display: block;
+}
+
+.holiday {
+    color: rgb(43, 172, 43);
+    background-color: #b1f0bb;
+}
+
+.weekend {
+    color: #9c67ff;
+    background-color: #E1d5f7;
+}
+
+.present {
+    background-color: #d2f6d1;
+}
+
+.absent {
+    color: #ff6b93;
+    background-color: #ffd6e1;
+}
+
+.date-picker-container {
+    margin-right: 30px;
+    align-items: flex-end;
+    display: flex;
+    right: 0;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+}
+
+.date-picker-container input[type="text" i]{
+    padding: 8;
+    font-size: 0.9vw;
+}

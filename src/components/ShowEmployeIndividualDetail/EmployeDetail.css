@@ -1,0 +1,100 @@
+.employee-details-sub-container {
+    display: flex;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.employee-picture {
+    padding: 0px 20px;
+}
+
+.employee-personal-details {
+    padding: 0px 20px;
+    text-transform: capitalize;
+
+}
+
+.employee-personal-details p {
+    color: #a8acbc;
+    font-weight: 500;
+
+}
+
+.attendance-status-container {
+    height: 400px;
+    margin-top: 45px;
+    /* overflow-y: scroll; */
+    background-color: white;
+    border-radius: 27px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.sub-attendance-table {
+    width: 100%;
+    padding: 20px;
+}
+
+.attendance-table {
+    /* height: 80%; */
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.attendance-table tr {
+    border-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.button-container {
+    width: 50%;
+    padding: 10px;
+    border: #39532f;
+    margin-left: 50px;
+}
+
+
+.header-button-edit-personal-info {
+    padding: 0.4rem 1rem !important;
+    height: 2rem !important;
+    /* margin-top: 1rem; */
+    border: none !important;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    font-size: 0.9vw !important;
+    /* margin-right: 5px; */
+  }
+  
+
+
+/* .button-container button {
+    padding: 8px;
+    border-radius: 6px;
+    margin: 0px 8px;
+    border: 1px solid grey;
+    cursor: pointer;
+    color: white;
+    background-color: #39532f;
+} */
+
+/* .button-container button:hover {
+    background-color: white;
+    color: #39532f;
+} */
+
+.personal-details {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    /* background-color: white; */
+}
+
+.back-button{
+    position: absolute;
+}

@@ -1,0 +1,27 @@
+
+.line{
+   border: 0.3px solid rgba(0, 0, 0, 0.15);
+}
+
+.main-container-lead {
+    width: 30%;
+    padding: 25px 30px;
+}
+
+.main-container-lead-2 {
+    width: 70%;
+    padding: 25px 30px;
+}
+.detail span{
+    font-size: 0.9vw;
+}
+
+.detail th{
+    font-size: 1vw;
+    text-align: center !important;
+}
+.detail td{
+    font-size: 1vw;
+    text-align: center !important;
+
+}
