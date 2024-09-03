@@ -1,0 +1,147 @@
+/* Sidebar container */
+.sidebar-new {
+    width: 250px; /* Fixed width for the sidebar */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 20px; /* Padding from the left */
+    transition: width 0.3s ease; /* Smooth transition for width */
+}
+
+/* Expand sidebar on hover */
+.sidebar-new:hover {
+    width: 260px; /* Slight expansion on hover */
+}
+
+/* Sidebar header */
+.sidebar-header-new {
+    padding: 1.5rem 0; /* Padding for top and bottom only */
+    text-align: left; /* Align to the left */
+    border-bottom: 1px solid #ddd; /* Add a bottom border for separation */
+}
+
+/* Logo styling */
+.sidebar-header-new img{
+    max-width: 200px; /* Control logo size */
+    height: auto;
+    display: block;
+    margin-left: 0; /* Align logo to the left */
+}
+
+/* Sidebar menu styling */
+.sidebar-menu-new {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Take up remaining space */
+    overflow-y: auto; /* Allow scrolling if menu items overflow */
+}
+
+/* Menu item styling */
+.menu-item-new {
+    padding: 1rem 2rem 1rem 1rem; /* Adjust padding for alignment */
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease, padding-left 0.3s ease; /* Added transition for padding */
+    text-align: left; /* Align text to the left */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-bottom: 0.5rem; /* Add space between main menu items */
+}
+
+
+/* Arrow for dropdown */
+.arrow-new {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Dropdown menu styling */
+.dropdown-open-new {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem; /* Add space between dropdown and its parent menu item */
+    padding-left: 30px; /* Indent dropdown items */
+}
+
+/* Dropdown item styling */
+.dropdown-item-new {
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.25rem; /* Add space between dropdown items */
+}
+
+/* Dropdown item hover */
+.dropdown-item-new:hover {
+    border-radius: 8px;
+    background-color: #8ae7a0;
+    color: #218838;
+}
+
+/* Menu item hover */
+.menu-item-new:hover {
+    padding-left: 1.5rem; /* Indent on hover for a dynamic effect */
+    border-radius: 9px;
+    background-color: #8ae7a0;
+    color: #218838;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+    
+}
+
+/* Active state for menu items */
+.menu-item-new.active {
+    border-radius: 9px;
+    background-color: #8ae7a0;
+    color: #218838;
+    font-size: 15px;
+}
+
+/* Sidebar footer styling */
+.sidebar-footer-new {
+    padding: 1.5rem 0; /* Padding for top and bottom only */
+    text-align: left; /* Align text to the left */
+    border-top: 1px solid #ddd; /* Add a top border for separation */
+}
+
+/* Logout button styling */
+.logout-button-new {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: calc(100% - 20px); /* Adjust width to match padding */
+    text-align: center; /* Center button text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
+    font-weight: 600; /* Make text bold */
+}
+
+/* Logout button hover */
+.logout-button-new:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+}
+
+/* Active state for dropdown-open menu items */
+.menu-item-new .dropdown-open-new {
+    background-color: #8ae7a0;
+    color: #218838;
+    border-radius: 9px;
+}
+
+/* Active state for dropdown items */
+.dropdown-item-new.active {
+    background-color: #aff0be;
+    color: #218838;
+    border-radius: 8px;
+    font-size: 15px;
+}

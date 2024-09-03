@@ -1,0 +1,119 @@
+/* Container for the entire component */
+.view-jk-batch-container-new {
+    margin-left: 300px;
+    padding: 40px 90px 0px 40px; /* Reduced padding to allow the table to take up more width */
+    width: 85vw; /* Increased the viewport width usage */
+    
+    background-color: #f8fafc;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Ensure the component takes up full screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.batch-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.batch-header h2 {
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    color: #333333;
+    font-size: 24px;
+    margin: 0;
+}
+
+.filters {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-select, .date-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Table container with sticky header */
+.table-container-view {
+    max-height: 700px; /* Set maximum height to enable scrolling */
+    flex-grow: 1; /* Allow the table container to grow and fill available space */
+    border-radius: 20px; /* Curve the table border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Batch table styles */
+.batch-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allow table columns to auto size based on content */
+    font-size: 16px; /* Increased font size for larger table appearance */
+}
+
+.batch-table thead {
+    overflow:hidden;
+    padding-right: 20px;
+    background-color:  #218838;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 18px; /* Increased header font size */
+}
+
+.batch-table th, .batch-table td {
+    padding: 16px; /* Increased padding to make cells larger */
+    border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
+}
+
+.batch-table th {
+    background-color:  #218838;
+}
+
+.batch-table td {
+    background-color: #ffffff;
+}
+
+
+.table-container-view::-webkit-scrollbar {
+    width: 6px; /* Adjust width as needed */
+}
+
+.table-container-view::-webkit-scrollbar-thumb {
+    background-color: #218838;
+    border-radius: 10px;
+}
+
+/* Hide scrollbar track */
+.table-container-view::-webkit-scrollbar-track {
+    background: transparent; /* Hide the track to make scrollbar more integrated */
+}
+
+
+/* Download button styling */
+.download-btn {
+    background-color:  #218838;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding for larger button */
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+.View-batch-searchbar {
+    left: 700px;
+    top: 0;
+}

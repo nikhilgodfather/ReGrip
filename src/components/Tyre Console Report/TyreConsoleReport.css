@@ -1,0 +1,156 @@
+/* Container for the entire component */
+.view-jk-batch-console-container-new {
+    margin-left: 300px;
+    padding: 40px 90px 0px 40px; /* Reduced padding to allow the table to take up more width */
+    width: 85vw; /* Increased the viewport width usage */
+    
+    background-color: #f8fafc;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Ensure the component takes up full screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.batch-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.batch-header h2 {
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    color: #333333;
+    font-size: 24px;
+    margin: 0;
+}
+
+.filters {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-select, .date-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Table container with sticky header */
+.table-container-console {
+    max-height: 700px; /* Set maximum height to enable scrolling */
+    flex-grow: 1; /* Allow the table container to grow and fill available space */
+    border-radius: 20px; /* Curve the table border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Batch table styles */
+.batch-table-console {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allow table columns to auto size based on content */
+    font-size: 16px; /* Increased font size for larger table appearance */
+}
+
+.batch-table-console thead {
+    overflow: hidden;
+    padding-right: 20px;
+    background-color: #218838;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 13px; /* Increased header font size */
+}
+
+.batch-table-console th, .batch-table-console td {
+    padding: 16px; /* Increased padding to make cells larger */
+    
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.batch-table-console th {
+    background-color: #218838;
+    white-space: normal; /* Allow text wrapping */
+    word-wrap: break-word; /* Ensure words can break */
+    word-break: break-word; /* Break long words */
+}
+
+.batch-table-console th span {
+    display: inline-block;
+    white-space: normal; /* Ensure span allows wrapping */
+    word-break: break-word; /* Ensure words break within the span if needed */
+}
+
+.batch-table-console td {
+    background-color: #ffffff;
+}
+
+/* Scrollbar styling */
+.table-container-console::-webkit-scrollbar {
+    width: 6px; /* Adjust width as needed */
+}
+
+.table-container-console::-webkit-scrollbar-thumb {
+    background-color: #218838;
+    border-radius: 10px;
+}
+
+/* Hide scrollbar track */
+.table-container-console::-webkit-scrollbar-track {
+    background: transparent; /* Hide the track to make scrollbar more integrated */
+}
+
+/* Download button styling */
+.download-btn {
+    background-color: #218838;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding for larger button */
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+.View-batch-searchbar {
+    left: 700px;
+    top: 0;
+}
+
+.batch-table-console .Inspected-Tyre .Insepected-Tyre-highlight-text {
+    background-color:rgb(240, 229, 245); /* Set background color */
+    padding: 4px 15px; /* Add some padding around the text */
+    border-radius: 6px; /* Optionally, add a border-radius for rounded corners */
+    color: black; /* Set text color for better readability */
+}
+
+.batch-table-console .Approved-Tyre .Approved-Tyre-Highlight-edit{
+    background-color: rgb(250, 227, 198);
+    padding: 4px 10px;
+    border-radius: 6px;
+    color: black;
+}
+.batch-table-console .Approved-Tyre .Approved-Tyre-Highlight-edit .Approved-Edit{
+    margin-left: 2px;
+    background-color: rgb(250, 245, 239);
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #218838;
+    border-radius: 6px;
+}
+
+.batch-table-console .Approved-Tyre .Approved-Tyre-Highlight-success{
+    background-color: rgb(186, 250, 177);
+    padding: 4px 15px;
+    border-radius: 6px;
+    color: black;
+}

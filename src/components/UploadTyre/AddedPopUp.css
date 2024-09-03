@@ -1,0 +1,88 @@
+/* Overlay to darken the background when popup is shown */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Container for the popup */
+  .popup-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative; /* Make it relative to position the close button */
+    animation: popup-show 0.3s ease-out;
+  }
+  
+  /* Close button styling */
+  .popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .popup-close:hover {
+    color: #f44336; /* Red color on hover */
+  }
+  
+  /* Animation for the popup appearance */
+  @keyframes popup-show {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Logo styling */
+  .popup-logo {
+    margin-bottom: 20px;
+  }
+  
+  .success-icon {
+    width: 60px;
+    height: 60px;
+    color: #4CAF50; /* Green color for success */
+  }
+  
+  /* Message styling */
+  .popup-message {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* View button styling */
+  .view-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-button:hover {
+    background-color: #45a049;
+  }
+  

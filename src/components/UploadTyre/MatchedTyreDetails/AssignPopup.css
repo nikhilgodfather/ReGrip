@@ -1,0 +1,141 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1550px; /* Increased max-width for better content display */
+    position: relative;
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.popup-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3a6c2b;
+    text-align: center;
+    font-weight: 700;
+}
+
+.table-container {
+    width: 100%;
+    max-height: 720px; /* Control the maximum height of the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    margin-top: 20px;
+}
+
+.inspection-table {
+    border-collapse: collapse; /* Collapse borders for a clean look */
+    font-size: 16px;
+    width: 100%; /* Ensure the table takes full width of the container */
+    table-layout: auto; /* Allow automatic table layout to adjust content */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the table */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+}
+
+
+.inspection-table thead {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+}
+
+.inspection-table thead th {
+    background-color: rgb(240, 240, 240); /* Sticky header background color */
+    padding: 16px 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.inspection-table thead th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.inspection-table thead th:last-child {
+    border-top-right-radius: 15px;
+}
+
+.inspection-table th,
+.inspection-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.inspection-table th {
+    font-weight: 600;
+}
+
+.inspection-table td.quantity {
+    font-weight: bold;
+    text-align: center;
+    background-color: #f0eaff;
+    border-radius: 5px;
+}
+
+.Confirm-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .Confirm-button:hover {
+    background-color: #45a049;
+  }
+  
+  .Overview-table {
+    display: flex;
+    border-radius: 8px; /* Rounded corners for a softer look */
+    font-weight: 600; /* Makes the text bold */
+    color: #333; /* Darker text color for readability */
+    /* Adds a subtle shadow for depth */
+}
+
+.Header-Matched-tyre-Details {
+    color: #45a049;
+    font-size: 30px;
+    margin-bottom: 20px; /* Adjusts space between the header and the overview table */
+}
+
+.Overview-item{
+    margin-left: 20px;
+}
+.error-type-table-data{
+    color: red;
+}
+
+.normal-black{
+    color: black;
+}

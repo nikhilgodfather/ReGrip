@@ -7,6 +7,7 @@ import {
 import { useContext, useEffect, useState } from "react";
 import AllRoutes from "./AllRoutes";
 import "./pages/Dashboard/Dashboard.css";
+import NewSidebarAllRoutes from "./NewSidebarAllRoutes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCar,
@@ -49,6 +50,12 @@ function App({ setIsloggedIn }) {
   }
   const { selectedCurrentElement, setSelectedCurrentElement } =
     useContext(SidebarContext);
+
+    const newSidebarRoutes = ["/UploadJKTyre", "/viewJkBatch", "/tyreConsoleReport"];
+
+    const isNewSidebarRoute = newSidebarRoutes.some((route) =>
+      location.pathname.startsWith(route)
+    );
 
   const regripItems = [
     {
@@ -166,7 +173,8 @@ function App({ setIsloggedIn }) {
 
   return (
     // <Router>
-    <div className="dashboard-page">
+    <div>
+    {!isNewSidebarRoute ? <div className="dashboard-page">
       <Sidebar
         showdb={showdb}
         setShowdb={setShowdb}
@@ -184,7 +192,10 @@ function App({ setIsloggedIn }) {
         style={{ width: showdb ? "85%" : "95%" }}
       >
         <AllRoutes />
+        
       </div>
+    </div> : ''}
+    {isNewSidebarRoute && <NewSidebarAllRoutes />}
     </div>
     // </Router>
   );

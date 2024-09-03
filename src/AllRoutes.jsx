@@ -53,6 +53,7 @@ function AllRoutes() {
         <Route path="/crms/customer" element={<Customers />} />
         <Route path="/crms/reports" element={<Reports />} />
         <Route path="/crms/analytics" element={<Analytics />} />
+       
       </Routes>
     </>
   );

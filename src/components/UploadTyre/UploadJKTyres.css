@@ -1,0 +1,168 @@
+/* Outer container with background, shadow, and border-radius */
+.upload-jk-tyres-container {
+    margin-top: 40px;
+    margin-left: 300px;
+    padding: 40px 300px 60px 180px;
+    width: 82%;
+    background-color:#f8fafc;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    
+}
+/* Header with title and search bar */
+.header-new-jk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;  /* Slightly reduced bottom margin */
+}
+
+.upload-header {
+    margin: 0;
+    font-size: 26px;
+    color: #2E3A59;
+    font-weight: 600;
+    position: relative;
+    left: -150px;
+}
+
+.search-bar-new {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    width: 250px;
+    position: relative;
+    left: 250px;
+    top: 40px;
+}
+
+/* Inner box styling */
+.inner-box {
+    margin-top: 150px;
+    background-color: white; /* Lightened background color */
+    border-radius: 12px;
+    padding: 20px;  
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03); /* Softer, more subtle shadow */
+    border: 1px solid #e0e6ed; /* Add a light border */
+}
+
+/* File upload section */
+.file-upload-section-jk-new {
+    display: table-caption;
+    /* grid-template-columns: 1fr auto; */
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+    margin-left: 250px;
+}
+
+.file-label-jk-new {
+    font-size: 16px; /* Slightly smaller, more refined font size */
+    font-weight: 500;
+    color: #5a6270; /* Softer color */
+}
+
+.file-input {
+    border: 1px solid #e0e6ed;
+    padding: 10px;
+    border-radius: 6px;
+    flex-grow: 1;
+    margin-left: 15px;
+    font-size: 14px; /* Adjusted font size for consistency */
+    width: 300px;
+}
+
+.download-template {
+    color: #218838;
+    text-decoration: underline; /* Underlined for better visibility */
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Tyre SN list */
+.tyre-sn-list table {
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to all contents */
+    text-align: center; /* Center text alignment for table content */
+    width: 60%;
+    border-collapse: separate; /* Allow border-radius to be effective */
+    border-spacing: 0; /* Remove spacing between cells */
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    margin-left: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.tyre-sn-list th, .tyre-sn-list td {
+    border: 1px solid #e0e6ed;
+    padding: 12px; /* Slightly reduced padding for a tighter look */
+    text-align: center; /* Center text within each cell */
+    color: #5a6270; /* Softer text color */
+}
+
+.tyre-sn-list th {
+    background-color: #218838; /* Adjusted to match the link color for consistency */
+    color: white;
+    font-weight: 500;
+}
+
+.tyre-sn-list td:first-child {
+    border-top-left-radius: 12px; /* Round top left corner */
+    border-bottom-left-radius: 12px; /* Round bottom left corner */
+}
+
+.tyre-sn-list td:last-child {
+    border-top-right-radius: 12px; /* Round top right corner */
+    border-bottom-right-radius: 12px; /* Round bottom right corner */
+}
+
+
+/* Submit button */
+.submit-button-new-jk {
+    padding: 12px 25px;
+    background-color: #218838; /* Changed to a more vibrant color */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; 
+}
+
+.submit-button-new-jk:hover {
+    background-color: #0afa3e; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .upload-jk-tyres-container {
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .search-bar {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .file-upload-section-jk-new {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .file-input {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .download-template {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
