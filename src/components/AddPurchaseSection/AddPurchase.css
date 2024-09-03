@@ -1,0 +1,121 @@
+.addPurchase-container {
+    width: 85%; /* Slightly increased for more spacing */
+    padding: 30px; /* Uniform padding for a clean look */
+    margin-top: 10px; /* Increased top margin for breathing room */
+    margin-left: 260px; /* Adjusted left margin for alignment */
+    background-color: #ffffff; /* Pure white background for clarity */
+    border-radius: 15px; /* Slightly larger border radius for smoother edges */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.header-title {
+    font-size: 26px; /* Slightly larger for emphasis */
+    font-weight: 600; /* Bolder text for the title */
+    margin-bottom: 25px; /* Increased margin for spacing */
+    text-align: left; /* Align to the left for consistency with the form */
+    color: #333333; /* Darker color for better contrast */
+}
+
+
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Increased gap for better spacing */
+}
+
+.form-row {
+    display: flex;
+    gap: 25px; /* Increased gap between input groups */
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px; /* Slightly larger margin for better spacing */
+    font-weight: 500; /* Medium font-weight for labels */
+    color: #555555; /* Dark grey for subtlety */
+}
+
+.form-group input {
+    padding: 12px; /* Increased padding for better input feel */
+    border-radius: 10px; /* Slightly larger radius for smoother edges */
+    border: 1px solid #dddddd; /* Light grey border */
+    font-size: 14px; /* Consistent font size */
+}
+.file-upload-section{
+    margin-left: 300px;
+    display: inline-flex;
+
+}
+.file-upload-group {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Increased gap for better spacing */
+}
+
+.upload-button {
+    padding: 12px 20px; /* Larger padding for better interaction */
+    border-radius: 20px; /* Rounded corners for buttons */
+    background-color: #00a000; /* Consistent green color */
+    color: #ffffff; /* White text */
+    cursor: pointer;
+    font-weight: 500; /* Medium font weight for better visibility */
+}
+
+.download-template {
+    color: #00a000; /* Consistent green color */
+    text-decoration: underline; /* Underlined for emphasis */
+}
+
+
+.tyre-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px; /* Consistent font size */
+}
+
+.tyre-table th,
+.tyre-table td {
+    padding: 12px; /* Increased padding for better readability */
+    text-align: left;
+    border-bottom: 1px solid #dddddd; /* Light grey border between rows */
+}
+
+.tyre-table th {
+    background-color: #00a000; /* Consistent green color */
+    color: #ffffff; /* White text for headers */
+    text-align: center;
+}
+
+.tyre-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternating row colors for readability */
+}
+
+.submit-button {
+    padding: 5px 10px; /* Larger padding for emphasis */
+    background-color: #00a000; /* Consistent green color */
+    color: #ffffff; /* White text */
+    border-radius: 25px; /* Rounded corners for button */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600; /* Bold text for submit button */
+    align-self: center;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.submit-button:hover {
+    background-color: #008800; /* Darker green on hover */
+}
+
+.inner-box-addpurchase {
+    background-color: white; /* Lightened background color */
+    border-radius: 12px;
+    padding: 20px;  
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03); /* Softer, more subtle shadow */
+    border: 1px solid #e0e6ed; /* Add a light border */
+}

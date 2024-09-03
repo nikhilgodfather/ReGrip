@@ -1,0 +1,157 @@
+/* Container for the entire component */
+.view-purchase-new {
+    margin-left: 300px;
+    padding: 40px 90px 0px 40px; /* Reduced padding to allow the table to take up more width */
+    width: 85vw; /* Increased the viewport width usage */
+    
+    background-color: #f8fafc;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; /* Ensure the component takes up full screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.view-purchase-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-purchase-header h2 {
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    color: #333333;
+    font-size: 24px;
+    margin: 0;
+}
+.menu-container-view-purchase {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 10px 20px;
+    margin-bottom: 20px; /* Space at the bottom */
+    margin-top: 20px;
+}
+
+.menu-container-view-purchase ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-container-view-purchase .menu-Item {
+    margin-right: 20px; /* Space between menu items */
+    padding: 8px 16px;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-container-view-purchase .menu-Item:hover,
+.menu-container-view-purchase .menu-Item.active {
+    background-color: #218838; /* Active or hover background color */
+    color: white;
+    font-size: 15px;
+}
+
+.menu-container-view-purchase .menu-searchBar {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #e9ecef; /* Light grey background */
+    width: 200px;
+    outline: none;
+    transition: background-color 0.3s;
+    float: right;
+    margin-left: 600px;
+}
+
+.menu-container-view-purchase .menu-searchBar:focus {
+    background-color: #ffffff; /* White background on focus */
+}
+
+/* Table container with sticky header */
+.table-container-view-purchase {
+    max-height: 700px; /* Set maximum height to enable scrolling */
+    flex-grow: 1; /* Allow the table container to grow and fill available space */
+    border-radius: 20px; /* Curve the table border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow to the table */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Batch table styles */
+.batch-table-view-purchase {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allow table columns to auto size based on content */
+    font-size: 16px; /* Increased font size for larger table appearance */
+}
+
+.batch-table-view-purchase thead {
+    overflow:hidden;
+    padding-right: 20px;
+    background-color:  #218838;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 15px; /* Increased header font size */
+}
+
+.batch-table-view-purchase th, .batch-table-view-purchase td {
+    padding: 16px; /* Increased padding to make cells larger */
+    border-bottom: 1px solid #e0e0e0;
+    white-space: nowrap;
+}
+
+.batch-table-view-purchase th {
+    background-color:  #218838;
+}
+
+.batch-table-view-purchase td {
+    background-color: #ffffff;
+}
+
+
+.table-container-view-purchase::-webkit-scrollbar {
+    width: 6px; /* Adjust width as needed */
+}
+
+.table-container-view-purchase::-webkit-scrollbar-thumb {
+    background-color: #218838;
+    border-radius: 10px;
+}
+
+/* Hide scrollbar track */
+.table-container-view-purchase::-webkit-scrollbar-track {
+    background: transparent; /* Hide the track to make scrollbar more integrated */
+}
+
+
+/* Download button styling */
+.download-btn {
+    background-color:  #55aad1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding for larger button */
+    cursor: pointer;
+}
+
+.batch-table-view-purchase .view-purchase-eye-btn .eye-btn{
+    background-color:  #55aad1;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding for larger button */
+    cursor: pointer;
+    color: white;
+}
+
+.download-btn:hover {
+    background-color: #45a049;
+}

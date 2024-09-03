@@ -51,7 +51,13 @@ function App({ setIsloggedIn }) {
   const { selectedCurrentElement, setSelectedCurrentElement } =
     useContext(SidebarContext);
 
-    const newSidebarRoutes = ["/UploadJKTyre", "/viewJkBatch", "/tyreConsoleReport"];
+    const newSidebarRoutes = [
+      "/UploadJKTyre",
+       "/viewJkBatch", 
+      "/tyreConsoleReport",
+       "/viewPurchase",
+      "/addpurchase"
+    ];
 
     const isNewSidebarRoute = newSidebarRoutes.some((route) =>
       location.pathname.startsWith(route)

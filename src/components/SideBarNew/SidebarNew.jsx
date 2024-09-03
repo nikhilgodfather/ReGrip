@@ -16,7 +16,7 @@ const Sidebar = ({ activeItem }) => {
     // Automatically open the dropdown menu based on the activeItem
     if (activeItem === 'upload-jk-tyres' || activeItem === 'view-jk-batch') {
       setOpenMenu(0); // Open the JK Inspection dropdown
-    } else if (activeItem === 'subcategory-a' || activeItem === 'View-Purchase') {
+    } else if (activeItem === 'Add-Purchase' || activeItem === 'View-Purchase') {
       setOpenMenu(1); // Open the Purchases dropdown
     } else if (activeItem === 'subcategory-x' || activeItem === 'subcategory-y') {
       setOpenMenu(2); // Open the Upload Lifting Tyres dropdown
@@ -65,9 +65,11 @@ const Sidebar = ({ activeItem }) => {
         </li>
         {openMenu === 1 && (
           <ul className="dropdown-menu-new">
+            <Link to='/addpurchase'>
             <li className={`dropdown-item-new ${activeItem === 'Add-Purchase' ? 'active' : ''}`}>
               Add Purchase
             </li>
+            </Link>
             <Link to='/viewPurchase'> <li className={`dropdown-item-new ${activeItem === 'View-Purchase' ? 'active' : ''}`}>
               View Purchase
             </li></Link>

@@ -1,0 +1,124 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 1550px; /* Increased max-width for better content display */
+    position: relative;
+    overflow: hidden; /* Hide overflow content */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.popup-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3a6c2b;
+    text-align: center;
+    font-weight: 700;
+}
+
+.Overview-table .Overview-item{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.table-container-view-purchase-Tyre-Detail {
+    
+    max-height: 520px; /* Control the maximum height of the table container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    margin-top: 20px;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgb(18, 95, 3)#f0f0f0; /* Thumb and track color */
+}
+
+/* Custom Scrollbar for WebKit-based browsers */
+.table-container-view-purchase-Tyre-Detail::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-container-view-purchase-Tyre-Detail::-webkit-scrollbar-thumb {
+    background-color: #56f0bc;
+    border-radius: 10px;
+}
+
+.table-container-view-purchase-Tyre-Detail::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.inspection-table {
+    border-collapse: collapse; /* Collapse borders for a clean look */
+    font-size: 16px;
+    width: 100%; /* Ensure the table takes full width of the container */
+    table-layout: auto; /* Allow automatic table layout to adjust content */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #ffffff; /* White background for the table */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2); /* Bottom shadow */
+}
+
+.inspection-table thead {
+    background-color: rgb(240, 240, 240);
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+}
+
+.inspection-table thead th {
+    background-color: rgb(240, 240, 240); /* Sticky header background color */
+    padding: 16px 20px;
+    font-weight: 600;
+    text-align: left;
+    white-space: normal; /* Allow wrapping of text */
+    word-wrap: break-word; /* Wrap long text */
+}
+
+.inspection-table th:first-child {
+    border-top-left-radius: 15px;
+}
+
+.inspection-table th:last-child {
+    border-top-right-radius: 15px;
+}
+
+.inspection-table th,
+.inspection-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.inspection-table th {
+    font-weight: 600;
+}
+
+.inspection-table td.quantity {
+    font-weight: bold;
+    text-align: center;
+    background-color: #f0eaff;
+    border-radius: 5px;
+}
