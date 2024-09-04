@@ -1,20 +1,23 @@
 /* Outer container with background, shadow, and border-radius */
 .upload-jk-tyres-container {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 300px;
-    padding: 40px 300px 60px 180px;
-    width: 82%;
-    background-color:#f8fafc;
+    padding: 40px 20px 60px 20px;
+    width: 80%;
+    background-color: #f8fafc;
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    
+    height: 95%;
+    max-height: 100vh;
+    text-align: -webkit-center;
 }
+
 /* Header with title and search bar */
 .header-new-jk {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;  /* Slightly reduced bottom margin */
+    margin-bottom: 25px;
 }
 
 .upload-header {
@@ -22,8 +25,6 @@
     font-size: 26px;
     color: #2E3A59;
     font-weight: 600;
-    position: relative;
-    left: -150px;
 }
 
 .search-bar-new {
@@ -32,120 +33,150 @@
     border: 1px solid #ddd;
     font-size: 16px;
     width: 250px;
-    position: relative;
-    left: 250px;
-    top: 40px;
 }
 
 /* Inner box styling */
 .inner-box {
-    margin-top: 150px;
-    background-color: white; /* Lightened background color */
+    margin-top: 200px;
+    background-color: white;
     border-radius: 12px;
-    padding: 20px;  
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03); /* Softer, more subtle shadow */
-    border: 1px solid #e0e6ed; /* Add a light border */
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e0e6ed;
+    max-width: 600px;
+    text-align: center;
 }
 
 /* File upload section */
 .file-upload-section-jk-new {
-    display: table-caption;
-    /* grid-template-columns: 1fr auto; */
+    display: flex;
     align-items: center;
-    margin-bottom: 60px;
-    position: relative;
-    margin-left: 250px;
+    margin-bottom: 40px;
 }
 
 .file-label-jk-new {
-    font-size: 16px; /* Slightly smaller, more refined font size */
+    font-size: 16px;
     font-weight: 500;
-    color: #5a6270; /* Softer color */
+    color: #5a6270;
 }
 
 .file-input {
     border: 1px solid #e0e6ed;
     padding: 10px;
     border-radius: 6px;
-    flex-grow: 1;
     margin-left: 15px;
-    font-size: 14px; /* Adjusted font size for consistency */
+    font-size: 14px;
     width: 300px;
 }
 
 .download-template {
     color: #218838;
-    text-decoration: underline; /* Underlined for better visibility */
+    text-decoration: underline;
     margin-left: 20px;
     font-size: 14px;
 }
 
 /* Tyre SN list */
-.tyre-sn-list table {
-    border-radius: 12px; /* Rounded corners */
-    overflow: hidden; /* Ensure rounded corners apply to all contents */
-    text-align: center; /* Center text alignment for table content */
-    width: 60%;
-    border-collapse: separate; /* Allow border-radius to be effective */
-    border-spacing: 0; /* Remove spacing between cells */
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    margin-left: 200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+.tyre-sn-list {
+    max-height: 300px; /* Adjust this value as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.tyre-sn-list th, .tyre-sn-list td {
-    border: 1px solid #e0e6ed;
-    padding: 12px; /* Slightly reduced padding for a tighter look */
-    text-align: center; /* Center text within each cell */
-    color: #5a6270; /* Softer text color */
+/* Curved thead and styled scrollbar */
+.tyre-sn-list table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Curved thead and sticky position */
+.tyre-sn-list thead {
+    background-color: #218838;
+    color: white;
+    font-weight: 500;
+    position: sticky;
+    top: 0; /* Sticks to the top of the container */
+    z-index: 2; /* Ensures the thead stays above other content */
+    border-radius: 12px 12px 0 0; /* Curve the top of the thead */
 }
 
 .tyre-sn-list th {
-    background-color: #218838; /* Adjusted to match the link color for consistency */
+    padding: 12px;
+    text-align: center;
     color: white;
-    font-weight: 500;
+    border-bottom: 2px solid #e0e6ed;
+    border-radius: 12px 12px 0 0; /* Curve the top of the thead */
+}
+
+.tyre-sn-list tbody td {
+    padding: 12px;
+    text-align: center;
+    color: #5a6270;
+    border: 1px solid #e0e6ed;
 }
 
 .tyre-sn-list td:first-child {
-    border-top-left-radius: 12px; /* Round top left corner */
-    border-bottom-left-radius: 12px; /* Round bottom left corner */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .tyre-sn-list td:last-child {
-    border-top-right-radius: 12px; /* Round top right corner */
-    border-bottom-right-radius: 12px; /* Round bottom right corner */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
+/* Custom Scrollbar */
+.tyre-sn-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tyre-sn-list::-webkit-scrollbar-track {
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.tyre-sn-list::-webkit-scrollbar-thumb {
+    background-color: #218838; /* Scrollbar color matches theme */
+    border-radius: 10px;
+    border: 2px solid #f8fafc; /* Padding around scrollbar */
+}
 
 /* Submit button */
 .submit-button-new-jk {
     padding: 12px 25px;
-    background-color: #218838; /* Changed to a more vibrant color */
+    background-color: #218838;
     color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .submit-button-new-jk:hover {
-    background-color: #0afa3e; /* Darker shade on hover */
+    background-color: #0afa3e;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .upload-jk-tyres-container {
         padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .header {
+    .header-new-jk {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .search-bar {
+    .search-bar-new {
         margin-top: 15px;
         width: 100%;
     }
@@ -164,5 +195,15 @@
     .download-template {
         margin-left: 0;
         margin-top: 10px;
+    }
+
+    .tyre-sn-list {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .inner-box {
+        margin-top: 20px;
     }
 }
