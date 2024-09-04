@@ -49,6 +49,7 @@
 .file-upload-section{
     margin-left: 300px;
     display: inline-flex;
+    margin-bottom: 10px;
 
 }
 .file-upload-group {
@@ -119,3 +120,39 @@
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.03); /* Softer, more subtle shadow */
     border: 1px solid #e0e6ed; /* Add a light border */
 }
+
+.inner-box-add-purchase {
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    margin-left: 350px;
+}
+.file-add-purchase-new{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+  .invoice-label-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .upload-button-invoice {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #008800;
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3;
+  }
+
+  .upload-invoice-add-purchase{
+    margin-left: 130px;
+  }
