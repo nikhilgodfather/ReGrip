@@ -140,7 +140,7 @@ const AddPurchase = ({ activeMenu }) => {
           Submit
         </button>
       </form>
-      {addedSuccessPurchasePopup && <AddedSuccessPurchasePopup onClose={handleAddPurchasePopup} />}
+      {addedSuccessPurchasePopup && <AddedSuccessPurchasePopup onClose={handleAddPurchasePopup} onConfirm={handleAddPurchasePopup}/>}
     </div>
   );
 };

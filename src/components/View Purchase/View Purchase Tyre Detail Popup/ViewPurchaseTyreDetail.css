@@ -40,6 +40,7 @@
 }
 
 .Overview-table .Overview-item{
+    margin-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 1;

@@ -11,6 +11,7 @@
 }
 
 .popup-content {
+    text-align: center;
     background: #fff;
     border-radius: 12px;
     padding: 30px;
@@ -109,6 +110,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 10px;
+    border: none;
+    border-radius: 10px;
   }
   
   .Confirm-button:hover {
