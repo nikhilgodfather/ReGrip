@@ -10,7 +10,7 @@ const NewSidebarAllRoutes = () => {
   return (
     <div>
       <Routes>
-       <Route path='/Dash' element={<Dashboard />}/>
+       <Route path='/RegripERP' element={<Dashboard />}/>
         <Route path='/UploadJKTyre' element={<UploadJKTyrePage activeItem="Tyre-Console-Report"/>}/>
          <Route path='/viewJkBatch' element={<ViewJKBatch activeItem="Tyre-Console-Report"/>}/>
          <Route path='/tyreConsoleReport' element={<TyreConsoleReportPage activeItem="Tyre-Console-Report"/>}/>

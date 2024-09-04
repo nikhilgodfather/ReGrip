@@ -20,6 +20,7 @@ import {
   faClipboard,
   faBuilding,
   faFileCircleExclamation,
+  faDashboard,
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
 import { REGRIP_SUPPLIER } from "./redux/constants/Constant";
@@ -52,6 +53,7 @@ function App({ setIsloggedIn }) {
     useContext(SidebarContext);
 
     const newSidebarRoutes = [
+      "/RegripERP",
       "/UploadJKTyre",
        "/viewJkBatch", 
       "/tyreConsoleReport",
@@ -103,6 +105,11 @@ function App({ setIsloggedIn }) {
 
       // element: <Crms />,
     },
+    {
+      name: "RegripERP",
+      icon :<FontAwesomeIcon icon={faDashboard}/>,
+      linkName: "/RegripERP"
+    }
   ];
 
   const SupplierItems = [
