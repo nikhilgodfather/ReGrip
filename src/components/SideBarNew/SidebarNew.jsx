@@ -80,7 +80,7 @@ const Sidebar = ({ activeItem }) => {
           className={`menu-item-new ${openMenu === 2 ? 'dropdown-open' : ''} ${activeItem === 'upload-lifting-tyres' ? 'active' : ''}`}
           onClick={() => toggleMenu(2)}
         >
-          Upload Lifting Tyres
+          Job Work Order
           <span className="arrow-new">
             <FontAwesomeIcon icon={openMenu === 2 ? faAngleUp : faChevronDown} />
           </span>
@@ -98,9 +98,11 @@ const Sidebar = ({ activeItem }) => {
         <Link to="/tyreConsoleReport"><li className={`menu-item-new ${activeItem === 'Tyre-Console-Report' ? 'active' : ''}`}>
           Tyre Console Report
         </li></Link>
-        <li className={`menu-item-new ${activeItem === 'job-work-invoices' ? 'active' : ''}`}>
-          Job Work Invoices
+        <Link to='/upload-lifting-tyres-new-erp'>
+        <li className={`menu-item-new ${activeItem === 'Upload-Lifting-Tyrtes' ? 'active' : ''}`}>
+          Upload Lifting Tyres
         </li>
+        </Link>
         <li className={`menu-item-new ${activeItem === 'facility' ? 'active' : ''}`}>
           Facility
         </li>

@@ -6,6 +6,7 @@ import TyreConsoleReportPage from "./pages/TyreConsoleReportPage"
 import Dashboard from "./pages/Dashboard";
 import ViewPurchasePage from './pages/ViewPurchasePage';
 import AddPurchasePage from './pages/AddPurchasePage';
+import UploadLiftingTyresPage from './pages/UploadLiftingTyresPage';
 const NewSidebarAllRoutes = () => {
   return (
     <div>
@@ -16,6 +17,7 @@ const NewSidebarAllRoutes = () => {
          <Route path='/tyreConsoleReport' element={<TyreConsoleReportPage activeItem="Tyre-Console-Report"/>}/>
          <Route path='/viewPurchase' element={<ViewPurchasePage activeItem="View-Purchase" activeMenu="Casing-From-JK"/>}/>
          <Route path='/addpurchase' element={<AddPurchasePage activeItem="Add-Purchase" activeMenu="Casing-From-JK"/>}/>
+         <Route path='/upload-lifting-tyres-new-erp' element={<UploadLiftingTyresPage activeItem="Upload-Lifting-Tyrtes"/>}/>
          </Routes>
     </div>
   )

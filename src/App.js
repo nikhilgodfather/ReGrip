@@ -58,7 +58,8 @@ function App({ setIsloggedIn }) {
        "/viewJkBatch", 
       "/tyreConsoleReport",
        "/viewPurchase",
-      "/addpurchase"
+      "/addpurchase",
+      "/upload-lifting-tyres-new-erp"
     ];
 
     const isNewSidebarRoute = newSidebarRoutes.some((route) =>
